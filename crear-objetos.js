@@ -12,6 +12,12 @@ cliente1.nombreCliente = "Nathalia";
 cliente1.dniCliente = "1.144.166.551"
 cliente1.numeroCuenta = "32656232";
 cliente1.saldoCuenta = "$521368";
-cliente1.
 
-console.log(cliente1);
+const cliente2 = new Cliente(); 
+
+cliente2.nombreCliente = "Andrea";
+cliente2.dniCliente = "1.144.567.259"
+cliente2.numeroCuenta = "85456341";
+cliente2.saldoCuenta = "$0";
+
+console.log(cliente1,cliente2);
