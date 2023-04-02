@@ -1,3 +1,5 @@
+//?Crear Clases
+
 //confirguran las propiedades del objeto, clase o molde.
 class Cliente {
  nombreCliente;
@@ -21,3 +23,6 @@ cliente2.numeroCuenta = "85456341";
 cliente2.saldoCuenta = "$0";
 
 console.log(cliente1,cliente2);
+
+
+
