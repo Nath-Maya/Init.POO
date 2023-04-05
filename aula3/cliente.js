@@ -1,7 +1,7 @@
 export
 
-class cliente {
+class Cliente {
    nombreCliente;
    dniCliente;
-   edad;
- }
+   rutCliente;
+ };
