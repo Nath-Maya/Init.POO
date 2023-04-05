@@ -1,0 +1,25 @@
+{
+  "name": "cuentasbancopopular",
+  "version": "1.0.0",
+  "description": "Gestion de cuentas corrientes del banco",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nath-Maya/introduccion-orientacion-objetos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nath-Maya/introduccion-orientacion-objetos/issues"
+  },
+  "homepage": "https://github.com/Nath-Maya/introduccion-orientacion-objetos#readme",
+  "type": "module",
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
