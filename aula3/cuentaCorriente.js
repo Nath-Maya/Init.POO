@@ -29,4 +29,11 @@ export class cuentaCorriente {
   verSaldo() {
     return this.#saldoCuenta;
   }
+
+  // Transferir , necesito el valor y la cuenta a donde hare la transferencia. 
+  transferirCuenta(valor,cuentaDestino) {
+   this.retirarDeCuenta(valor); //retiro de una cuenta
+   cuentaDestino.depositoCuenta(valor); //le indico que en la cuenta destino hare un metodo de desposito de cuenta.
+
+}
 }
