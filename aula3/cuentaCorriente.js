@@ -7,21 +7,22 @@ export class cuentaCorriente {
   agencia;
   #saldoCuenta; // Atributo privado se inicializa con # dentro de la clase.
 
-  set setCliente(valor) {
+  set cliente(valor) {
     if (valor instanceof Cliente) 
     this.#cliente = valor; //se atribuye la referencia. 
   }
 
-  get getCliente() {
+  get cliente() {
     return this.#cliente;
   }
 
   //inicio un constructor
-  constructor() {
-    this.#cliente = null;
-    this.numeroCuenta = "";
-    this.agencia = "";
-    this.#saldoCuenta = 0;
+  //FUNCION que se ejecuta cada que se genera una instacia
+  constructor(cliente , numeroCuenta ,agencia) {
+    this.cliente = cliente;
+    this.numeroCuenta = numeroCuenta;
+    this.agencia = agencia;
+    this.saldoCuenta = 0;
   }
 
   //El metodo siempre va dentro de la class eligiendo las propiedades.

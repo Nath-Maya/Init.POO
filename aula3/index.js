@@ -3,19 +3,9 @@
 import {Cliente} from './cliente.js'
 import {cuentaCorriente} from './cuentaCorriente.js';
 
-
-const cliente = new Cliente();
-cliente.nombreCliente = 'Nathalia';
-cliente.dniCliente = '1144166551';
-cliente.rutCliente = 'P1144166551';
-
-const cuentaDeNathalia = new cuentaCorriente();
-cuentaDeNathalia.numeroCuenta = '1';
-cuentaDeNathalia.agencia = '001';
-cuentaDeNathalia.cliente = cliente;
-
-
-
+//? CLIENTE #1
+const cliente = new Cliente('Nathalia','1144166551','P1144166551');
+const cuentaDeNathalia = new cuentaCorriente(cliente, '1', '001');
 
 //*Movimientos en la cuenta
  cuentaDeNathalia.depositoCuenta(350);
@@ -24,20 +14,11 @@ cuentaDeNathalia.cliente = cliente;
 
  //*Reflejar el saldo
  let saldoCuenta = cuentaDeNathalia.verSaldo();
- console.log('El saldo actual (cuentaNathalia) ' + saldoCuenta);
 
 
-//?Creo un nuevo cliente
- const cliente2 = new Cliente();
- cliente2.nombreCliente = 'Andrea';
- cliente2.dniCliente = '1144167825';
- cliente2.rutCliente = 'P1144167825';
-
-//?Creo una cuenta destino
- const cuentaAndrea = new cuentaCorriente();
-cuentaAndrea.numeroCuenta = '2';
-cuentaAndrea.agencia = '002';
-cuentaAndrea.setCliente = cliente2;
+//? CLIENTE #2
+ const cliente2 = new Cliente('Andrea', '1144167825', 'P1144167825');
+ const cuentaAndrea = new cuentaCorriente(cliente, '2','002');
 
 
 // //* Movimientos en cuenta
@@ -50,10 +31,7 @@ cuentaAndrea.setCliente = cliente2;
 // const saldoNathalia = cuentaDeNathalia.verSaldo();
 // console.log("El saldo actual (cuentaNathalia) "+ saldoNathalia);
 
-console.log(cuentaAndrea.cliente);
+console.log(cuentaCorriente);
+console.log(cliente2);
 
-cuentaAndrea.cliente = 0;
 
-console.log(cuentaAndrea.cliente);
-
-let parametroValor = 100;
