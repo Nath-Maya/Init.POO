@@ -1,12 +1,24 @@
+import {Cliente} from "./cliente.js"
+
+
 export class cuentaCorriente {
-  cliente;
+  #cliente;
   numeroCuenta;
   agencia;
   #saldoCuenta; // Atributo privado se inicializa con # dentro de la clase.
 
+  set setCliente(valor) {
+    if (valor instanceof Cliente) 
+    this.#cliente = valor; //se atribuye la referencia. 
+  }
+
+  get getCliente() {
+    return this.#cliente;
+  }
+
   //inicio un constructor
   constructor() {
-    this.cliente = null;
+    this.#cliente = null;
     this.numeroCuenta = "";
     this.agencia = "";
     this.#saldoCuenta = 0;

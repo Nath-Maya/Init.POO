@@ -37,12 +37,23 @@ cuentaDeNathalia.cliente = cliente;
  const cuentaAndrea = new cuentaCorriente();
 cuentaAndrea.numeroCuenta = '2';
 cuentaAndrea.agencia = '002';
-cuentaAndrea.cliente = cliente;
+cuentaAndrea.setCliente = cliente2;
 
-cuentaDeNathalia.transferirCuenta(100,cuentaAndrea);
 
-const saldoAndrea = cuentaAndrea.verSaldo();
-console.log('El saldo actual (cuentaAndrea) ' + saldoAndrea);
+// //* Movimientos en cuenta
 
-const saldoNathalia = cuentaDeNathalia.verSaldo();
-console.log("El saldo actual (cuentaNathalia) "+ saldoNathalia);
+// cuentaDeNathalia.transferirCuenta(100,cuentaAndrea);
+
+// const saldoAndrea = cuentaAndrea.verSaldo();
+// console.log('El saldo actual (cuentaAndrea) ' + saldoAndrea);
+
+// const saldoNathalia = cuentaDeNathalia.verSaldo();
+// console.log("El saldo actual (cuentaNathalia) "+ saldoNathalia);
+
+console.log(cuentaAndrea.cliente);
+
+cuentaAndrea.cliente = 0;
+
+console.log(cuentaAndrea.cliente);
+
+let parametroValor = 100;
