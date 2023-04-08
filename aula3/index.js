@@ -21,17 +21,7 @@ const cuentaDeNathalia = new cuentaCorriente(cliente, '1', '001');
  const cuentaAndrea = new cuentaCorriente(cliente, '2','002');
 
 
-// //* Movimientos en cuenta
+console.log(cuentaCorriente.cantidadCuentas)
 
-// cuentaDeNathalia.transferirCuenta(100,cuentaAndrea);
-
-// const saldoAndrea = cuentaAndrea.verSaldo();
-// console.log('El saldo actual (cuentaAndrea) ' + saldoAndrea);
-
-// const saldoNathalia = cuentaDeNathalia.verSaldo();
-// console.log("El saldo actual (cuentaNathalia) "+ saldoNathalia);
-
-console.log(cuentaCorriente);
-console.log(cliente2);
 
 

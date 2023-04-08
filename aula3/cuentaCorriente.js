@@ -6,6 +6,11 @@ export class cuentaCorriente {
   numeroCuenta;
   agencia;
   #saldoCuenta; // Atributo privado se inicializa con # dentro de la clase.
+  
+  //!Atributo estatico 
+  //aplica para todos los objetos, es global. 
+  //se atribuye su valor solo a la clase. 
+  static cantidadCuentas = 0;
 
   set cliente(valor) {
     if (valor instanceof Cliente) 
@@ -16,13 +21,14 @@ export class cuentaCorriente {
     return this.#cliente;
   }
 
-  //inicio un constructor
+  //! Inicio un constructor
   //FUNCION que se ejecuta cada que se genera una instacia
   constructor(cliente , numeroCuenta ,agencia) {
     this.cliente = cliente;
     this.numeroCuenta = numeroCuenta;
     this.agencia = agencia;
     this.saldoCuenta = 0;
+    cuentaCorriente.cantidadCuentas++;
   }
 
   //El metodo siempre va dentro de la class eligiendo las propiedades.
