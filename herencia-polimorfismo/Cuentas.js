@@ -1,5 +1,5 @@
 export class Cuenta {
-   #cliente;
+    #cliente;
     #saldo;
 
     constructor(cliente, numero, agencia, saldo) {
