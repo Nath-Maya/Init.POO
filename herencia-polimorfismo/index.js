@@ -2,6 +2,7 @@
 import {Cliente} from './Cliente.js'
 import {CuentaAhorro} from './CuentaAhorro.js';
 import {CuentaCorriente} from './CuentaCorriente.js';
+import { Cuenta } from './Cuentas.js';
 
 
 const cliente = new Cliente('Leonardo','13804050','123224');
@@ -24,6 +25,7 @@ console.log(cuentaAhorroLeonardo.verSaldo());
 cuentaAhorroLeonardo.retirarDeCuenta(120);
 console.log(cuentaAhorroLeonardo.verSaldo());
 
+const cuentaSimple = new Cuenta(cliente, '250', '001' , )
 
 
 
