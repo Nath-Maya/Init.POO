@@ -30,7 +30,7 @@ export class Cuenta {
   }
 
   retirarDeCuenta(valor) {
-   this._retirarDeCuenta(valor, 0);
+    throw new Error('Debe implementar el metodo');
   }
 
   _retirarDeCuenta(valor, comision) {

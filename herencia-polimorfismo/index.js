@@ -28,7 +28,10 @@ console.log(cuentaAhorroLeonardo.verSaldo());
 */
 
 const cuentaNominaLeonardo = new CuentaNomina(cliente,'9854','001',100);
-console.log(cuentaNominaLeonardo);
+cuentaNominaLeonardo.depositoEnCuenta(150);
+console.log(cuentaNominaLeonardo.verSaldo());
 
+cuentaNominaLeonardo.retirarDeCuenta(50);
+console.log(cuentaNominaLeonardo.verSaldo());
  
 
