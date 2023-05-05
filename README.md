@@ -2,6 +2,10 @@
 
 Recopilacion de los ejercicios realizados durante el proceso de aprendizaje con Alura, en el curso de especializacion Front-end
 
+_E-lerning:_ Alura Latam
+
+<code><img height="100%" width='40' src="img/alura.png" alt="HTML5"/></code>
+
 ### 📈 Objetivos
 
 ✅ Entender el comportamiento de las clases.
@@ -15,8 +19,8 @@ Recopilacion de los ejercicios realizados durante el proceso de aprendizaje con 
 
 <h3> 🛠 &nbsp;Tecnologías & Lenguajes :</h3>
 
-<code><img height="40" width='40' src="/img/img readme/HTML5_logo.png" alt="HTML5"/></code>
-<code><img height="40" width='40' src="/img/Javascript.svg.png" alt="Javascript"/></code>
+<code><img height="100%" width='40' src="/img/HTML5_logo.png" alt="HTML5"/></code>
+<code><img height="100%" width='40' src="/img/Javascript.svg.png" alt="Javascript"/></code>
 
  <br/>
 
