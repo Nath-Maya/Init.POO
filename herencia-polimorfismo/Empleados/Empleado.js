@@ -15,7 +15,7 @@ export class Empleado {
     this.#clave = clave;
   }
 
-  clave()  {
+  get clave()  {
     return this.#clave;
   }
   //Metodo abstracto
