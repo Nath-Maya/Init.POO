@@ -25,6 +25,6 @@ export class Empleado {
 }
 
   _verBonificacion(bono) {
-    return this.#salario + (this.#salario * bono) / 100;
+    return this.#salario + this.#salario*bono/100;
   }
 }
