@@ -11,12 +11,13 @@ export class Empleado {
     this.#clave = "";
   }
 
+  //Gestion de la clave de usuario
   asignarClave(clave) {
     this.#clave = clave;
   }
 
-  get clave()  {
-    return this.#clave;
+  autenticable (clave) {
+    return clave == this.#clave;
   }
   //Metodo abstracto
   verBonificacion() {
